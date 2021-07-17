@@ -14,14 +14,12 @@
 <!-- end meta -->
 <?php the_content() ; ?>
 <?php endwhile;?>
-<?php else : ?>
-<?php echo wp_autop('Sorry, no posts were found!'); ?>
 <?php endif; ?>
 <?php comments_template(); ?>
 </main>
 
 <aside>
-
+This is my single page
 </aside>
 
 
