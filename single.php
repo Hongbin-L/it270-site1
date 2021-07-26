@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
+<div id="hero">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/pexels-pixabay-1583982.jpg" alt="banner">
+</div>
+
+<div class="wrapper">
 <main>
 <?php if(have_posts()) :?>
 <?php while(have_posts()) : the_post() ;?>
@@ -10,11 +14,18 @@
 <span><b>Posted By: </b><?php the_author(); ?></span>
 <span><b>Posted On: </b><?php the_time('F j, Y g:i a'); ?></span>
 </div>
-</article>
+
 <!-- end meta -->
 <?php the_content() ; ?>
+</article>
 <?php endwhile;?>
+
 <?php endif; ?>
+
+<span class="next-previous">
+<?php (previous_post_link()) ? '%link' : '';?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : '';?>
+</span>
+
 <?php comments_template(); ?>
 </main>
 

@@ -1,15 +1,6 @@
-<footer>
-<div class="copyright">
-<ul>
-    <li>Copyright <?php echo date('Y') ;?></li>
-    <li>All Rights Reserved</li>
-    <li><a href="">Terms of use</a></li>
-    <li><a href="">Web Design by Hongbin</a></li>
-</ul>
-</div>
-<!-- close copyright div -->
-</footer>
-		<script>
+<?php dynamic_sidebar('sidebar-footer-content') ;?>
+<p><?php echo date('Y') ;?></p>
+<script>
 		$(document).ready(function(){
 			$(".nav-button").click(function () {
 			$(".nav-button,.primary-nav").toggleClass("open");

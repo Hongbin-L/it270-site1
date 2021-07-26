@@ -6,18 +6,50 @@
 }
 
 body {
-    background: beige;
+    background: #fff;
+}
+
+.home #hero {
+    background-image:url(https://purplestar.club/it270/site1/wp-content/uploads/pexels-shalender-kumar-3574440-1-1.jpg);
+    background-attachment:fixed;
+    background-size:100%;
+    background-position:0 150px;
+    min-height:600px;
+    max-width:100%;
+    background-repeat:no-repeat;
+}
+
+.home #hero img {
+    display:none;
+}
+
+.inner-page #hero {
+    background-image:url(https://purplestar.club/it270/site1/wp-content/uploads/pexels-pixabay-1583982.jpg);
+    background-attachment:fixed;
+    background-size:100%;
+    background-position:0 150px;
+    min-height:500px;
+    max-width:100%;
+    background-repeat:no-repeat;
+}
+
+.inner-page #hero img{
+    display:none;
 }
 
 #top {
-    background: tan;
+    background: #A69851;
     height: 60px;
     line-height: 60px;
     padding: 0 20px;
 }
 
-#searchform {
+#top #searchform {
     float: right;
+}
+
+main #searchform{
+	float: left;
 }
 
 .screen-reader-text {
@@ -30,9 +62,16 @@ body {
     margin-right: 5px;
 }
 
+main input#s {
+    height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+	width: 80%;
+}
+
 #top input#searchsubmit{
     padding: 4px;
-    background: brown;
+    background: #d97118;
     color: #fff;
     border: none;
 }
@@ -47,7 +86,7 @@ body {
 }
 
 a {
-    color: brown;
+    color: #A69851;
 }
 
 .email-notes {
@@ -69,7 +108,12 @@ a {
 }
 
 header {
-    background: yellow;
+	height: 150px;
+    background: #EBFFF2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .inner-header{
@@ -96,6 +140,8 @@ header {
 
 .main-navigation a{
     text-decoration: none;
+	display: block;
+	padding: 3px;
 }
 
 .sub-menu{
@@ -105,7 +151,7 @@ header {
 .main-navigation li:hover .sub-menu {
     display: block;
     position: absolute;
-    top: 17px;
+    top: 19px;
     left: 0;
     padding: 6px;
     background: #fff;
@@ -113,32 +159,107 @@ header {
 
 .main-navigation li:hover .sub-menu li{
     margin-left: 0;
+	width: 145px;
 }
 
-#wrapper {
+#search-error {
+	max-width: 1100px;
+	margin: 150px auto 20px auto;
+}
+
+.wrapper {
     max-width: 1100px;
-    margin:0 auto;
+    margin:20px auto 20px auto;
     clear: both;
+	background: #fff;
 }
 
 main {
     float:left;
     width: 63%;
-    margin-top: 20px;
+	background: none;
+	margin-bottom: 20px;
 }
 
 aside {
     float: right;
     width: 34%;
-    height: 200px;
-    background: lightgreen;
-    margin-top: 20px;
+    /*background: lightgreen;*/
+}
+
+.row {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#block-8{
+	background: lightblue;
+	padding: 3%;
+}
+
+#nav_menu-2{
+	background: lightblue;
+	margin-top: -20px;
+	padding: 1% 3% 3% 3%;
+}
+
+.menu-our-tours-menu-container{
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.menu-our-tours-menu-container li{
+	line-height: 1.3;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+#block-11{
+	margin-top: 20px;
+	border: 2px solid orange;
+	padding: 3%;
+}
+
+.full-width {
+	clear: both;
+	background: #efefef;
+}
+
+#block-7 {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
 }
 
 footer {
     clear: both;
-    height: 200px;
     background: #ccc;
+	padding-top: 20px;
+}
+
+footer .wrapper {
+	background: #ccc;
+}
+
+.third {
+	/*940 px grid 300 times 3plus 2 gutters of 20px =940px */
+	width:31.91%;
+	float: left;
+	margin-right: 2.12%;
+}
+
+.third:last-of-type{
+	margin-right: 0;
+}
+
+.col8 {
+	width: 48.93%;
+	float: left;
+}
+
+.col8:last-of-type{
+	float:right;
 }
 
 .copyright {
@@ -156,6 +277,45 @@ footer {
 .copyright li {
     float: left;
     margin-right: 30px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+#email-notes {
+	font-style: italic;
+}
+
+#comment {
+	display: block;
+}
+
+.next-previous {
+	display: block;
+	margin-bottom: 10px;
+	font-style: italic;
+	font-weight: bold;
+	color: #d97118;
+	font-size: 1.1em;
+}
+
+.next-previous a {
+	color:#d97118;
+}
+
+blockquote {
+	font-size: 1.7em;
+	font-style: italic;
+	margin: 0 10% 20px 10%;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.big-font {
+	font-size:1.4em;
+	margin: 0 5% 20px 5%;
 }
 
 p {
@@ -199,8 +359,36 @@ h2 {
     margin-bottom: 10px;
 }
 
-
 .nav-button { display: none; } /* hide the navigation button by default */
+
+@media screen and (max-width: 1430px) {
+	.home #hero {
+		background-image:none;
+		margin-top: 150px;
+		max-width:100%;
+		min-height: auto;
+	}
+	
+	.home #hero img{
+		display: block;
+    	background-size:100%;
+		max-width:100%;
+	}
+	
+	.inner-page #hero {
+		background-image:none;
+		margin-top: 150px;
+		max-width:100%;
+		min-height: auto;
+	}
+	
+	.inner-page #hero img{
+		display: block;
+    	background-size:100%;
+		max-width:100%;
+	}
+}
+
 
 @media only screen and (max-width: 700px) {
 

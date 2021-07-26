@@ -1,13 +1,14 @@
 <?php 
 get_header(); 
-/* Template Name: Front Page */
+/* Template Name: About Page */
 ?>
 
 <div id="hero">
-    <img src="<?php echo get_template_directory_uri();?>/../../uploads/pexels-shalender-kumar-3574440-1-1.jpg" alt="banner">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/pexels-pixabay-1583982.jpg" alt="banner">
 </div>
 
 <div class="wrapper">
+<main>
 <?php if(has_post_thumbnail()) : ?>
 <?php the_post_thumbnail(); ?>
 <?php endif;?>
@@ -16,6 +17,13 @@ get_header();
 
 <?php the_content() ; ?>
 <?php endwhile;?>
+
+
+</main>
+
+<aside id="secondary" class="widget-area">
+    <?php dynamic_sidebar( 'sidebar-about' ); ?>
+</aside><!-- #secondary -->
 
 </div>
 <!-- end wrapper -->

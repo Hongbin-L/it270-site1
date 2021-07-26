@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
+<div id="hero">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/pexels-pixabay-1583982.jpg" alt="banner">
+</div>
+
+<div class="wrapper">
 <main>
 <?php if(have_posts()) :?>
 <?php while(have_posts()) : the_post() ;?>
@@ -34,9 +38,7 @@ Would you like to search again with different keywords?</p>'
 <?php endif; ?>
 </main>
 
-<aside>
-This is the index page!!!!
-</aside>
+<?php get_sidebar() ;?>
 
 
 </div>
