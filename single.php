@@ -29,9 +29,7 @@
 <?php comments_template(); ?>
 </main>
 
-<aside>
-This is my single page
-</aside>
+<?php get_sidebar() ;?>
 
 
 </div>
