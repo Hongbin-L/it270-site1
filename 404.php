@@ -3,7 +3,7 @@ get_header();
 
 ?>
 <div id="search-error">
-<img src="<?php echo get_template_directory_uri();?>/../../uploads/searching.jpg" alt="searching">
+<img src="<?php echo get_template_directory_uri();?>/../../uploads/full-header1.jpg" alt="404Error">
 </div>
 <div class="wrapper">
 
